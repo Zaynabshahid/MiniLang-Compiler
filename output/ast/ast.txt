@@ -1,0 +1,111 @@
+STATEMENTS
+  FUNC_DECL
+    ID : greet
+    PARAMS
+      PARAM_INT
+        ID : id
+    BLOCK
+      STATEMENTS
+        DECL_INT
+          ID : x
+          NUMBER : 100
+        RETURN
+          ADD
+            ID : x
+            ID : id
+  DECL_INT
+    ID : a
+    NUMBER : 10
+  DECL_INT
+    ID : b
+    NUMBER : 20
+  DECL_INT
+    ID : sum
+    ADD
+      ID : a
+      ID : b
+  PRINT
+    ID : sum
+  DECL_FLOAT
+    ID : pi
+    FLOATNUM : 3.140000
+  DECL_FLOAT
+    ID : radius
+    NUMBER : 5
+  DECL_FLOAT
+    ID : area
+    MUL
+      MUL
+        ID : pi
+        ID : radius
+      ID : radius
+  PRINT
+    ID : area
+  DECL_INT
+    ID : counter
+    NUMBER : 0
+  WHILE
+    LT
+      ID : counter
+      NUMBER : 5
+    BLOCK
+      STATEMENTS
+        PRINT
+          ID : counter
+        ASSIGN
+          ID : counter
+          ADD
+            ID : counter
+            NUMBER : 1
+  IF
+    GT
+      ID : sum
+      NUMBER : 25
+    BLOCK
+      STATEMENTS
+        PRINT
+          ID : sum
+    ELSE
+      BLOCK
+        STATEMENTS
+          PRINT
+            NUMBER : 0
+  DECL_INT
+    ID : greeting
+    FUNC_CALL
+      ID : greet
+      ARGS
+        NUMBER : 42
+  PRINT
+    ID : greeting
+  DECL_INT
+    ID : x
+    NUMBER : 100
+  DECL_INT
+    ID : y
+    NUMBER : 200
+  DECL_INT
+    ID : result
+    SUB
+      MUL
+        ID : x
+        NUMBER : 2
+      DIV
+        ID : y
+        NUMBER : 4
+  PRINT
+    ID : result
+  DECL_INT
+    ID : product
+    MUL
+      NUMBER : 7
+      NUMBER : 8
+  DECL_INT
+    ID : division
+    DIV
+      NUMBER : 56
+      NUMBER : 8
+  PRINT
+    ID : product
+  PRINT
+    ID : division

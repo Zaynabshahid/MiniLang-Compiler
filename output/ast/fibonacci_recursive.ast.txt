@@ -1,0 +1,44 @@
+STATEMENTS
+  FUNC_DECL
+    ID : fib
+    PARAMS
+      PARAM_INT
+        ID : n
+    BLOCK
+      STATEMENTS
+        IF
+          LTE
+            ID : n
+            NUMBER : 1
+          BLOCK
+            STATEMENTS
+              RETURN
+                ID : n
+        DECL_INT
+          ID : a
+          FUNC_CALL
+            ID : fib
+            ARGS
+              SUB
+                ID : n
+                NUMBER : 1
+        DECL_INT
+          ID : b
+          FUNC_CALL
+            ID : fib
+            ARGS
+              SUB
+                ID : n
+                NUMBER : 2
+        RETURN
+          ADD
+            ID : a
+            ID : b
+  DECL_INT
+    ID : result
+    FUNC_CALL
+      ID : fib
+      ARGS
+        NUMBER : 10
+  PRINT
+    ID : result

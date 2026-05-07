@@ -1,0 +1,48 @@
+STATEMENTS
+  FUNC_DECL
+    ID : factorial
+    PARAMS
+      PARAM_INT
+        ID : n
+    BLOCK
+      STATEMENTS
+        DECL_INT
+          ID : result
+          NUMBER : 1
+        DECL_INT
+          ID : i
+          NUMBER : 1
+        WHILE
+          LTE
+            ID : i
+            ID : n
+          BLOCK
+            STATEMENTS
+              ASSIGN
+                ID : result
+                MUL
+                  ID : result
+                  ID : i
+              ASSIGN
+                ID : i
+                ADD
+                  ID : i
+                  NUMBER : 1
+        RETURN
+          ID : result
+  DECL_INT
+    ID : fact5
+    FUNC_CALL
+      ID : factorial
+      ARGS
+        NUMBER : 5
+  PRINT
+    ID : fact5
+  DECL_INT
+    ID : fact10
+    FUNC_CALL
+      ID : factorial
+      ARGS
+        NUMBER : 10
+  PRINT
+    ID : fact10

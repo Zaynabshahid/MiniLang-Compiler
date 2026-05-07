@@ -1,0 +1,16 @@
+
+--- SYMBOL TABLE ---
+a | int | scope 0
+area | float | scope 0
+b | int | scope 0
+counter | int | scope 0
+division | int | scope 0
+greet | function | scope 0
+greeting | int | scope 0
+pi | float | scope 0
+product | int | scope 0
+radius | float | scope 0
+result | int | scope 0
+sum | int | scope 0
+x | int | scope 1
+y | int | scope 0

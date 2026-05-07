@@ -1,0 +1,43 @@
+STATEMENTS
+  DECL_INT
+    ID : sum
+    NUMBER : 0
+  DECL_INT
+    ID : i
+    NUMBER : 0
+  WHILE
+    LT
+      ID : i
+      NUMBER : 10
+    BLOCK
+      STATEMENTS
+        ASSIGN
+          ID : sum
+          ADD
+            ID : sum
+            ID : i
+        ASSIGN
+          ID : i
+          ADD
+            ID : i
+            NUMBER : 1
+  PRINT
+    ID : sum
+  DECL_INT
+    ID : result
+    ADD
+      MUL
+        NUMBER : 5
+        NUMBER : 3
+      NUMBER : 2
+  PRINT
+    ID : result
+  DECL_INT
+    ID : constant
+    SUB
+      ADD
+        NUMBER : 10
+        NUMBER : 20
+      NUMBER : 5
+  PRINT
+    ID : constant
