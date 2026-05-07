@@ -1,0 +1,39 @@
+function greet(int id) {
+    int x = 100;
+    return x + id;
+}
+
+int a = 10;
+int b = 20;
+int sum = a + b;
+print(sum);
+
+float pi = 3.14;
+float radius = 5;
+float area = pi * radius * radius;
+print(area);
+
+int counter = 0;
+while (counter < 5) {
+    print(counter);
+    counter = counter + 1;
+}
+
+if (sum > 25) {
+    print(sum);
+} else {
+    print(0);
+}
+
+int greeting = greet(42);
+print(greeting);
+
+int x = 100;
+int y = 200;
+int result = x * 2 - y / 4;
+print(result);
+
+int product = 7 * 8;
+int division = 56 / 8;
+print(product);
+print(division);

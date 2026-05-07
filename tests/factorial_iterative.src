@@ -1,0 +1,15 @@
+function factorial(int n) {
+    int result = 1;
+    int i = 1;
+    while (i <= n) {
+        result = result * i;
+        i = i + 1;
+    }
+    return result;
+}
+
+int fact5 = factorial(5);
+print(fact5);
+
+int fact10 = factorial(10);
+print(fact10);
